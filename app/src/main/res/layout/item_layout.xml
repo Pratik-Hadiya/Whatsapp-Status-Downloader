@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cabfe9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="1dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:backgroundTint="#2d3c48"
+            app:cardCornerRadius="20dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="175dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="18dp"
+                >
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/thumbnail">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_play_circle_filled_24"
+                    android:id="@+id/play">
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
